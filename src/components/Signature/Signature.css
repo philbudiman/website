@@ -1,0 +1,19 @@
+#svg_window {
+    align-self: center;
+}
+
+#svg_window svg {
+    width: 10rem;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    animation: dash 4.5s linear forwards;
+    overflow: visible;
+    transform: skew(-5deg,0deg);
+    filter: invert(100%) sepia(12%) saturate(7500%) hue-rotate(285deg) brightness(115%) contrast(112%);
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
