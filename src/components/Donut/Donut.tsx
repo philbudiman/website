@@ -27,6 +27,8 @@ const getDimensions = (donutProps: DonutProps): DonutData => {
   };
 };
 
+
+// Ported from https://www.a1k0n.net/2011/07/20/donut-math.html
 const Donut: React.FC<DonutProps> = (donutProps: DonutProps) => {
   const { height, width, interval } = getDimensions(donutProps);
 
