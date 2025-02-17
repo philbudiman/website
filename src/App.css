@@ -1,11 +1,10 @@
-body {
+.Base {
   background : black;
-}
-
-.AppWrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
   width: 100vw;
+  flex-direction: column;
+  color: white;
 }
