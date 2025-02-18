@@ -22,7 +22,7 @@ const getDimensions = (donutProps: DonutProps): DonutData => {
   const width = donutProps.width ? donutProps.width : donutDefaults.width;
   return {
     width: width,
-    height: donutProps.heightOverride ? donutProps.heightOverride : width / 2,
+    height: donutProps.heightOverride ? donutProps.heightOverride : Math.floor(width / 2),
     interval: donutProps.interval ? donutProps.interval : donutDefaults.interval,
   };
 };
