@@ -1,5 +1,5 @@
 import './Home.css';
-import Signature  from './Signature/Signature';
+import Signature  from '../../components/Signature/Signature';
 
 const Home = () => {
   return (
