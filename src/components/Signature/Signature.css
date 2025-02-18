@@ -9,7 +9,7 @@
     animation: dash 4.5s linear forwards;
     overflow: visible;
     transform: skew(-5deg,0deg);
-    filter: invert(100%) sepia(12%) saturate(7500%) hue-rotate(285deg) brightness(115%) contrast(112%);
+    filter: invert(100%) saturate(7500%) hue-rotate(285deg) brightness(115%) contrast(112%);
 }
 
 @keyframes dash {
