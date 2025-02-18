@@ -1,3 +1,5 @@
+@font-face { font-family: Lumen; src: url('./assets/Lumen-Full.ttf'); } 
+
 .Base {
   background : black;
   display: flex;
