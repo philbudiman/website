@@ -3,4 +3,10 @@
   flex-direction: column;
   margin: .25rem;
   padding: 1rem;
+  gap: 1rem;
+}
+
+.dropdown-link {
+  color: white;
+  font-size: medium;
 }

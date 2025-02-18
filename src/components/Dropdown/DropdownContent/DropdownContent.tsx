@@ -1,5 +1,5 @@
-import { Button } from '@mui/material';
 import './DropdownContent.css';
+import { Link } from 'wouter';
 
 const DropdownContent = () => {
   const buttonMap: Record<string, string> = {
@@ -9,18 +9,10 @@ const DropdownContent = () => {
   return (
     <div className="dropdown-content">
       {Object.keys(buttonMap).map((key) => (
-        <Button
-        sx={{
-          'color': 'white',
-          'textTransform': 'none',
-          'fontSize': 'medium'
-        }}
-        key={key}
-        href={buttonMap[key]}>
+        <Link className="dropdown-link" to={buttonMap[key]}>
           {key}
-        </Button>
-      ))
-    }
+        </Link>
+      ))}
     </div>
   );
 };
