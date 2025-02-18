@@ -1,12 +1,18 @@
+import { Link } from 'wouter';
+import Donut from '../../components/Donut/Donut';
 import './NotFound.css';
 
 const NotFound = () => {
     return (
         <div className="NotFound">
-            <h1>404</h1>
-            <h3>Page Not Found</h3>
-            <p className="text-xl mt-2">Oops! Looks like you're lost in space.</p>
-            <p className="mt-4">Let's head <a href="/" className="text-blue-400 underline">home</a>.</p>
+            <Donut width={55}/>
+            <div className="content">
+                <h1>404</h1>
+                <h3>Page Not Found</h3>
+                
+                <i>It's too dangerous to go alone! Take this.</i>
+                <p>Let's head <Link to="/">home</Link>.</p>
+            </div>
         </div>
     );
 };
