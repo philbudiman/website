@@ -4,16 +4,16 @@ import Home from "../../pages/Home/Home";
 import NotFound from "../../pages/NotFound/NotFound";
 
 const Router = () => {
-    const [_, setLocation] = useLocation();
+    const [, setLocation] = useLocation();
     const redirectNotFound = () => {
-        setLocation('/ohno');
+        setLocation('/404');
         return null;
     };
     return (
         <Switch>
             <Route path='/about' component={About} />
             <Route path='/' component={Home} />
-            <Route path='/ohno' component={NotFound} />
+            <Route path='/404' component={NotFound} />
             <Route path='*' component={redirectNotFound} />
         </Switch>
     );
