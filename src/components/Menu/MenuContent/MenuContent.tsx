@@ -8,9 +8,9 @@ const MenuContent = () => {
   };
   return (
     <div className="menu-content">
-      {Object.keys(buttonMap).map((key) => (
-        <Link className="menu-link" to={buttonMap[key]}>
-          {key}
+      {Object.entries(buttonMap).map(([entry, url]) => (
+        <Link className="menu-link" key={entry} to={url}>
+          {entry}
         </Link>
       ))}
     </div>
