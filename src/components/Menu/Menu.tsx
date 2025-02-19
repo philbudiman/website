@@ -2,11 +2,11 @@ import * as React from "react";
 import Popover from "@mui/material/Popover";
 import { Cross as Hamburger } from 'hamburger-react';
 
-import DropdownContent from "./DropdownContent/DropdownContent";
+import MenuContent from "./MenuContent/MenuContent";
 
-import "./Dropdown.css";
+import "./Menu.css";
 
-const Dropdown = () => {
+const Menu = () => {
   const [isOpen, setOpen] = React.useState<boolean>(false);
 
   const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(
@@ -54,10 +54,10 @@ const Dropdown = () => {
             }
           }
         }}
-        children={<DropdownContent/>}
+        children={<MenuContent/>}
       />
     </>
   );
 };
 
-export default Dropdown;
+export default Menu;

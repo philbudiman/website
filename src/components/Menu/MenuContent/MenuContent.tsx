@@ -1,19 +1,19 @@
-import './DropdownContent.css';
+import './MenuContent.css';
 import { Link } from 'wouter';
 
-const DropdownContent = () => {
+const MenuContent = () => {
   const buttonMap: Record<string, string> = {
     'home': '/',
     'about': '/about'
   };
   return (
-    <div className="dropdown-content">
+    <div className="menu-content">
       {Object.keys(buttonMap).map((key) => (
-        <Link className="dropdown-link" to={buttonMap[key]}>
+        <Link className="menu-link" to={buttonMap[key]}>
           {key}
         </Link>
       ))}
     </div>
   );
 };
-export default DropdownContent;
+export default MenuContent;

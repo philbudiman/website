@@ -1,11 +1,11 @@
 import './Header.css';
 import logo from './assets/logo.png';
-import Dropdown from '../Dropdown/Dropdown';
+import Menu from '../Menu/Menu';
 
 const Header = () => {
   return (
     <header className="header">
-      <Dropdown />
+      <Menu />
       <img
         src={logo}
         className="logo"
