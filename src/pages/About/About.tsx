@@ -1,10 +1,18 @@
 import './About.css';
+import headshot from '../../assets/headshot.jpg';
 
 const About = () => {
+    const textContent = "Hey 👋 I'm [Your Name], a software engineer based in [Location]. I love building things that make people's lives easier and more efficient. If you're interested in working together or learning more about my work, feel free to reach out!";
     return (
-        <div className="About">
-            <h1>about page</h1>
-            <p>test</p>
+        <div className="about-base">
+            <h1>about</h1>
+            <div className="content-wrapper">
+                <img
+                    src={headshot}
+                    alt="headshot"
+                />
+                <text>{textContent}</text>
+            </div>
         </div>
     );
 };

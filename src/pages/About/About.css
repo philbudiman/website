@@ -1,3 +1,23 @@
-.About {
-    color: inherit;
+.about-base {
+    margin: 4rem;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;    
+    width: 100%;
+    gap: 3rem;
+    align-items: center;
+
+    & text {
+        font-size: larger;
+        width: 30rem;
+    }
+
+    & img {
+        display: block;
+        width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+    }
 }
