@@ -11,7 +11,7 @@ const About = () => {
                     src={headshot}
                     alt="headshot"
                 />
-                <text>{textContent}</text>
+                <p>{textContent}</p>
             </div>
         </div>
     );

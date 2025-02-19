@@ -9,7 +9,7 @@
     gap: 3rem;
     align-items: center;
 
-    & text {
+    & p {
         font-size: larger;
         width: 30rem;
     }
