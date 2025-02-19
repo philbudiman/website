@@ -1,15 +1,12 @@
 import './Header.css';
-import logo from './assets/logo.png';
 import Menu from '../Menu/Menu';
+import Logo from '../Logo/Logo';
 
 const Header = () => {
   return (
     <header className="header">
       <Menu />
-      <img
-        src={logo}
-        className="logo"
-      />
+      <Logo />
     </header>
   );
 };
