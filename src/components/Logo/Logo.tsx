@@ -33,6 +33,8 @@ const Logo = () => {
         open={show}
         anchorEl={anchorEl.current}
         onClose={hoverOff}
+        disableAutoFocus
+        disableEnforceFocus
         anchorOrigin={{
           vertical: "bottom",
           horizontal: "left",
@@ -46,6 +48,7 @@ const Logo = () => {
               borderRadius: '8px', // Optional: add rounded corners for better appearance
               pointerEvents: 'auto',
             },
+            // inert: !show ? true : undefined,
             onMouseEnter: hoverOn,
             onMouseLeave: hoverOff,
           }
