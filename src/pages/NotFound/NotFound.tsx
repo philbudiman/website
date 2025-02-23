@@ -5,7 +5,7 @@ import './NotFound.css';
 const NotFound = () => {
     return (
         <div className="NotFound">
-            <Donut width={55}/>
+            <Donut width={55} />
             <div className="content">
                 <h1>404</h1>
                 <h3>Page Not Found</h3>
