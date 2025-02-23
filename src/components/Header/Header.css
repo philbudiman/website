@@ -1,7 +1,7 @@
 .header {
-  padding: 1.5rem;
+  margin: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 95vw
+  width: 95%; /* todo: add media query to set width to 90% for mobile view */
 }
