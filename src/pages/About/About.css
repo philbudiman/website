@@ -4,20 +4,21 @@
 
 .content-wrapper {
     display: flex;
-    flex-direction: row;    
+    flex-direction: column;    
     width: 100%;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
 
     & p {
-        font-size: larger;
-        width: 30rem;
+        width: 85vw;
+        white-space: pre-line;
+        text-align: center;
     }
 
     & img {
         display: block;
-        width: 13rem;
-        height: 13rem;
-        border-radius: 50%;
+        width: 14rem;
+        height: 14rem;
+        border-radius: 5%;
     }
 }

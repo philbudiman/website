@@ -4,7 +4,7 @@ import './NotFound.css';
 
 const NotFound = () => {
     return (
-        <div className="NotFound">
+        <div className="NotFound fade-in">
             <Donut width={55} />
             <div className="content">
                 <h1>404</h1>

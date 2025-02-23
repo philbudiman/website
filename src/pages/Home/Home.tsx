@@ -3,7 +3,7 @@ import Signature  from '../../components/Signature/Signature';
 
 const Home = () => {
   return (
-    <div className="Home">
+    <div className="Home fade-in">
       <Signature/>
     </div>
   );
