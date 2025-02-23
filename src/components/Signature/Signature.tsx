@@ -2,7 +2,7 @@ import "./Signature.css";
 
 const Signature = () => {
   return (
-    <div className="fade-in" id="svg_window">
+    <div id="svg_window">
       <svg
         width="210mm"
         height="148mm"
