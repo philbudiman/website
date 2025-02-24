@@ -1,6 +1,6 @@
 import './Header.css';
 import Menu from '../Menu/Menu';
-import Logo from '../LogoDropdown/Logo';
+import Logo from '../Logo/Logo';
 
 const Header = () => {
   return (
