@@ -10,3 +10,8 @@
   color: white;
   font-size: medium;
 }
+
+.menu-link:hover {
+  color: white;
+  font-weight: bold;
+}
