@@ -2,4 +2,8 @@
   padding: 10px;
   font-size: smaller;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  align-items: center;
 }

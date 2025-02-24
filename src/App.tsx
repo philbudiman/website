@@ -3,13 +3,16 @@ import Header from './components/Header/Header';
 // import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
 import Router from './components/Router/Router';
+import { ThemeProvider } from './components/Theme/ThemeProvider';
 
 function App() {
   return (
     <div className="Base">
-      <Header/>
-      <Router/>
-      <Footer/>
+      <ThemeProvider>
+        <Header/>
+        <Router/>
+        <Footer/>
+      </ThemeProvider>
     </div>
   )
 }

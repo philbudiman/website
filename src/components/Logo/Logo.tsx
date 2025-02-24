@@ -49,8 +49,6 @@ const Logo = () => {
           paper: {
             sx: {
               backgroundColor: getBackgroundColor(),
-              // border: '1px solid #333', // Optional: add a border for better visibility
-              // borderRadius: '8px', // Optional: add rounded corners for better appearance
               boxShadow: 'none',
               pointerEvents: 'auto',
             },

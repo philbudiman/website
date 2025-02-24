@@ -1,17 +1,17 @@
 @import url("assets/fonts/fonts.css");
 @import url("assets/animation.css");
 
-:root {
+ /* :root {
   --color-primary: #000; 
   --color-background: #fff; 
-}
-
+} */
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --color-primary: #fff; 
     --color-background: #000;
   }
-}
+} */
 
 .Base {
   background : var(--color-background);

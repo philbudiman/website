@@ -5,7 +5,7 @@ import { Cross as Hamburger } from 'hamburger-react';
 import MenuContent from "./MenuContent/MenuContent";
 
 import "./Menu.css";
-import { getBackgroundColor } from "../../utils";
+import { getBackgroundColor, isDarkMode } from "../../utils";
 
 const Menu = () => {
   const [isOpen, setOpen] = React.useState<boolean>(false);
@@ -48,8 +48,8 @@ const Menu = () => {
           paper: {
             sx: {
               backgroundColor: getBackgroundColor(),
-              // border: '1px solid #333', // Optional: add a border for better visibility
-              borderRadius: '8px', // Optional: add rounded corners for better appearance
+              border: isDarkMode() ?'1px solid #333': undefined,
+              borderRadius: '8px',
             }
           }
         }}

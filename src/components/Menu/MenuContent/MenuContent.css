@@ -13,5 +13,5 @@
 
 .menu-link:hover {
   color: var(--color-primary);
-  font-weight: bold;
+  text-decoration: underline;
 }
