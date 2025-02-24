@@ -10,15 +10,11 @@ export const getCSSVariable = (variable: string): string => {
 };
 
 export const getPrimaryColor = (): string => {
-  const pc = getCSSVariable('--color-primary');
-  console.log('primary=' + pc);
-  return pc;
+  return getCSSVariable('--color-primary');
 };
 
 export const getBackgroundColor = (): string => {
-  const bc = getCSSVariable('--color-background');
-  console.log('background=' + bc);
-  return bc;
+  return getCSSVariable('--color-background');
 };
 
 /**
