@@ -1,6 +1,7 @@
 #svg_window {
     align-self: center;
     position: relative; /* Allow absolute positioning within this container */
+    justify-content: center;
 }
 
 #svg_window svg {
@@ -15,7 +16,7 @@
 
 .restart-button {
     position: absolute; /* Position the button outside the flow of the SVG */
-    bottom: 25%; /* Adjust as needed */
+    bottom: -15%; /* Adjust as needed */
     left: 50%; /* Center it horizontally */
     transform: translateX(-50%);
     background-color: var(--color-background);

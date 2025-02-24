@@ -21,7 +21,7 @@ const Signature = () => {
       <svg
         key={animationKey} // This triggers a re-render and resets the animation
         width="210mm"
-        height="148mm"
+        height="56mm"
         version="1.1"
         viewBox="0 0 210 148"
         xmlns="http://www.w3.org/2000/svg"
