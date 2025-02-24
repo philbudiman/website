@@ -17,4 +17,10 @@
         height: 14rem;
         border-radius: 5%;
     }
+
+    & a {
+        color: white;
+        font-weight: 800;
+        text-decoration: underline;
+    }
 }
