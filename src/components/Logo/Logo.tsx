@@ -3,7 +3,7 @@ import Popover from "@mui/material/Popover";
 import logo from '../../assets/logo.png';
 import './Logo.css';
 
-import MenuContent from "../Menu/MenuContent/MenuContent";
+import LogoContent from "./LogoContent/LogoContent";
 
 const Logo = () => {
   const [show, setShow] = React.useState<boolean>(false);
@@ -37,13 +37,17 @@ const Logo = () => {
         disableEnforceFocus
         anchorOrigin={{
           vertical: "bottom",
-          horizontal: "left",
+          horizontal: "center",
+        }}
+        transformOrigin={{
+          vertical: "top",
+          horizontal: "center"
         }}
         slotProps={{
           paper: {
             sx: {
               backgroundColor: 'black',
-              border: '1px solid #333', // Optional: add a border for better visibility
+              // border: '1px solid #333', // Optional: add a border for better visibility
               borderRadius: '8px', // Optional: add rounded corners for better appearance
               pointerEvents: 'auto',
             },
@@ -55,7 +59,7 @@ const Logo = () => {
         style={{
           pointerEvents: 'none',
         }}
-        children={<MenuContent/>}
+        children={<LogoContent/>}
       />
     </div>
   );
