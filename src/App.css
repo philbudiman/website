@@ -1,19 +1,8 @@
 @import url("assets/fonts/fonts.css");
 @import url("assets/animation.css");
 
- /* :root {
-  --color-primary: #000; 
-  --color-background: #fff; 
-} */
-/*
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: #fff; 
-    --color-background: #000;
-  }
-} */
-
 .Base {
+  transition: background-color 0.3s ease, color 0.3s ease;
   background : var(--color-background);
   display: flex;
   font-family: 'SF Pro Light', 'Helvetica Neue', sans-serif;
