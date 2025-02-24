@@ -10,3 +10,4 @@ Featured Dependencies:
 - [Wouter](https://github.com/molefrog/wouter) for routing
 - [hamburger-react](https://github.com/cyntler/hamburger-react) for the menu button
 - [Material UI](https://mui.com/material-ui/) for some base UI components
+- [react-markdown](https://remarkjs.github.io/react-markdown/) for easier About page text formatting
