@@ -29,6 +29,7 @@ const Logo = () => {
         onMouseOver={hoverOn}
         onMouseLeave={hoverOff}
         style={{ cursor: "pointer" }}
+        title="links"
       />
       
       <Popover
