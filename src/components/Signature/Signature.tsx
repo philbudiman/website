@@ -1,17 +1,31 @@
 import "./Signature.css";
-
 import { useTheme } from "../Theme/useTheme";
+import { useState } from "react";
 
 const Signature = () => {
   const { darkMode } = useTheme();
+  const [animationKey, setAnimationKey] = useState(0); // This will be used to reset the animation
+  const [showButton, setShowButton] = useState(false); // Track if the button should be shown
+
+  const restartAnimation = () => {
+    setAnimationKey(prevKey => prevKey + 1); // Change the key to trigger reflow and restart the animation
+    setShowButton(false); // Hide the button when restarting the animation
+  };
+
+  const handleAnimationEnd = () => {
+    setShowButton(true); // Show the button once the animation completes
+  };
+
   return (
     <div id="svg_window">
       <svg
+        key={animationKey} // This triggers a re-render and resets the animation
         width="210mm"
         height="148mm"
         version="1.1"
         viewBox="0 0 210 148"
         xmlns="http://www.w3.org/2000/svg"
+        onAnimationEnd={handleAnimationEnd} // Trigger when animation completes
       >
         <defs>
           <clipPath id="clipPath886">
@@ -46,6 +60,11 @@ const Signature = () => {
           strokeWidth="8.365"
         />
       </svg>
+      {showButton && (
+        <button onClick={restartAnimation} className="fade-in restart-button">
+          restart?
+        </button>
+      )}
     </div>
   );
 };
