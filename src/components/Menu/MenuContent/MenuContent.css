@@ -7,11 +7,11 @@
 }
 
 .menu-link {
-  color: white;
+  color: var(--color-primary);
   font-size: medium;
 }
 
 .menu-link:hover {
-  color: white;
+  color: var(--color-primary);
   font-weight: bold;
 }

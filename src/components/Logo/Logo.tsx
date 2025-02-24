@@ -5,6 +5,8 @@ import './Logo.css';
 
 import LogoContent from "./LogoContent/LogoContent";
 
+import { getBackgroundColor } from "../../utils";
+
 const Logo = () => {
   const [show, setShow] = React.useState<boolean>(false);
 
@@ -46,9 +48,10 @@ const Logo = () => {
         slotProps={{
           paper: {
             sx: {
-              backgroundColor: 'black',
+              backgroundColor: getBackgroundColor(),
               // border: '1px solid #333', // Optional: add a border for better visibility
-              borderRadius: '8px', // Optional: add rounded corners for better appearance
+              // borderRadius: '8px', // Optional: add rounded corners for better appearance
+              boxShadow: 'none',
               pointerEvents: 'auto',
             },
             // inert: !show ? true : undefined,

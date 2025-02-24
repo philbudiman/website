@@ -5,6 +5,7 @@ import { Cross as Hamburger } from 'hamburger-react';
 import MenuContent from "./MenuContent/MenuContent";
 
 import "./Menu.css";
+import { getBackgroundColor } from "../../utils";
 
 const Menu = () => {
   const [isOpen, setOpen] = React.useState<boolean>(false);
@@ -46,8 +47,8 @@ const Menu = () => {
         slotProps={{
           paper: {
             sx: {
-              backgroundColor: 'black',
-              border: '1px solid #333', // Optional: add a border for better visibility
+              backgroundColor: getBackgroundColor(),
+              // border: '1px solid #333', // Optional: add a border for better visibility
               borderRadius: '8px', // Optional: add rounded corners for better appearance
             }
           }
