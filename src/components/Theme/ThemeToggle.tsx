@@ -1,6 +1,8 @@
 import { useTheme } from "./useTheme";
 import { LightMode, DarkMode } from '@mui/icons-material';
 
+import './ThemeToggle.css';
+
 interface ThemeToggleProps {
   mode?: "icon" | "text";  // Restrict mode to only "icon" or "text"
 };
@@ -11,16 +13,10 @@ const ThemeToggle = ({ mode = "icon" }: ThemeToggleProps) => {
 
   return (
     <div
-      style={{
-        color: darkMode ? 'white' : 'black',
-        cursor: 'pointer',
-        display: 'flex',
-        alignItems: 'center',
-        fontWeight: 'normal',
-      }}
+      aria-label="toggle dark mode"
+      className="theme-toggle"
       onClick={toggleTheme}
       title={hoverMessage}
-      aria-label="toggle dark mode"
     >
       {mode === "icon" ? (
         darkMode ? <LightMode /> : <DarkMode />
