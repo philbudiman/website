@@ -61,6 +61,7 @@ const Menu: React.FC = () => {
         backdrop: {
           sx: {
             backgroundColor: 'transparent', // Make the backdrop transparent
+            maxWidth: '100vw',
           },
         },
       }}
@@ -68,7 +69,7 @@ const Menu: React.FC = () => {
       <Fade in={isOpen} timeout={500}>
         <Box
           sx={{
-            width: '100vw',
+            width: 'max-content',
             height: '100vh',
             bgcolor: getBackgroundColor(),
             display: 'flex',
@@ -78,24 +79,31 @@ const Menu: React.FC = () => {
             position: 'relative',
           }}
         >
-          <IconButton
+          <Box
             sx={{
-              position: 'absolute',
-              top: '1.5rem',
-              left: '1.25rem',
-              color: getPrimaryColor(),
-              padding: 0,
+              width: '90vw',
+              margin: '1.5rem',
+              marginLeft: '1.2rem',
+              display: 'flex',
+              alignItems: 'flex-start'
             }}
-            onClick={handleClose}
           >
-            <Hamburger
-              toggled={isOpen}
-              toggle={setOpen}
-              size={24}
-              distance="md"
-              direction="right"
-            />
-          </IconButton>
+            <IconButton
+              sx={{
+                color: getPrimaryColor(),
+                padding: 0,
+              }}
+              onClick={handleClose}
+            >
+              <Hamburger
+                toggled={isOpen}
+                toggle={setOpen}
+                size={24}
+                distance="md"
+                direction="right"
+              />
+            </IconButton>
+          </Box>
           <Box sx={{
             width: '100%',
             height: '100%',
