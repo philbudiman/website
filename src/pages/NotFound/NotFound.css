@@ -4,3 +4,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.content {
+    & a {
+        color: var(--color-primary);
+        text-decoration: underline;
+        font-weight: heavier;
+    }
+}
