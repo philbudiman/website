@@ -9,6 +9,10 @@
 .menu-link {
   color: var(--color-primary);
   font-size: medium;
+  
+  @media (max-width: 480px) {
+    font-size: larger;
+  }
 }
 
 .menu-link:hover {
