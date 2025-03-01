@@ -1,6 +1,6 @@
 import * as React from "react";
 import Popover from "@mui/material/Popover";
-import { Modal, Fade, Box, IconButton } from "@mui/material";
+import { Modal, Fade, Box, IconButton, Backdrop } from "@mui/material";
 import { Cross as Hamburger } from 'hamburger-react';
 import MenuContent from "./MenuContent/MenuContent";
 import "./Menu.css";
@@ -54,6 +54,15 @@ const Menu: React.FC = () => {
     <Modal
       open={isOpen && isMobile}
       onClose={handleClose}
+      // Adding a backdrop component with no opacity to fix the flashing issue
+      slots={{ backdrop: Backdrop }}
+      slotProps={{
+        backdrop: {
+          sx: {
+            backgroundColor: 'transparent', // Make the backdrop transparent
+          },
+        },
+      }}
     >
       <Fade in={isOpen} timeout={500}>
         <Box
@@ -65,14 +74,14 @@ const Menu: React.FC = () => {
             flexDirection: 'column',
             alignItems: 'center',
             overflow: 'auto',
-            position: 'relative', //added for absolute positioning of close button
+            position: 'relative',
           }}
         >
           <IconButton
             sx={{
               position: 'absolute',
-              top: '1rem', // Matches Header margin
-              left: '.7rem', // Matches Header margin
+              top: '1.2rem',
+              left: '.7rem',
               color: getPrimaryColor(),
             }}
             onClick={handleClose}
@@ -101,7 +110,12 @@ const Menu: React.FC = () => {
 
   return (
     <>
-      <span onClick={handleClick}>
+      <IconButton 
+        sx={{
+          color: getPrimaryColor(),
+        }}
+        onClick={handleClick}
+      >
         <Hamburger
           toggled={isOpen}
           toggle={setOpen}
@@ -109,7 +123,7 @@ const Menu: React.FC = () => {
           distance="md"
           direction="right"
         />
-      </span>
+      </IconButton>
       {popoverContent}
       {modalContent}
     </>
