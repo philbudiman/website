@@ -21,8 +21,9 @@ const Logo = () => {
   };
 
   return (
-    <div className="logo-container">
+    <>
       <img
+        className="logo"
         src={logo}
         ref={anchorEl}
         alt="Logo"
@@ -63,7 +64,7 @@ const Logo = () => {
         }}
         children={<LogoContent/>}
       />
-    </div>
+    </>
   );
 };
 
