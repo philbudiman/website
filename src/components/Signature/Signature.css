@@ -16,7 +16,7 @@
 
 .restart-button {
     position: absolute; /* Position the button outside the flow of the SVG */
-    bottom: -15%; /* Adjust as needed */
+    top: 150%;
     left: 50%; /* Center it horizontally */
     transform: translateX(-50%);
     background-color: var(--color-background);
