@@ -25,7 +25,7 @@ const Menu: React.FC = () => {
 
   React.useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 480);
+      setIsMobile(window.innerWidth < 480 || window.innerHeight < 480);
     };
     handleResize();
     window.addEventListener('resize', handleResize);
@@ -69,7 +69,7 @@ const Menu: React.FC = () => {
       <Fade in={isOpen} timeout={500}>
         <Box
           sx={{
-            width: 'max-content',
+            width: '100vw',
             height: '100vh',
             bgcolor: getBackgroundColor(),
             display: 'flex',
