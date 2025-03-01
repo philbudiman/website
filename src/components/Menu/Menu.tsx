@@ -81,8 +81,8 @@ const Menu: React.FC = () => {
           <IconButton
             sx={{
               position: 'absolute',
-              top: '1.2rem',
-              left: '.7rem',
+              top: '1.5rem',
+              left: '1.25rem',
               color: getPrimaryColor(),
             }}
             onClick={handleClose}
@@ -120,9 +120,7 @@ const Menu: React.FC = () => {
   return (
     <>
       <IconButton 
-        sx={{
-          color: getPrimaryColor(),
-        }}
+        sx={{ color: "inherit" }}
         onClick={handleClick}
       >
         <Hamburger
