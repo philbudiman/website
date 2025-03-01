@@ -5,6 +5,7 @@ import { Cross as Hamburger } from 'hamburger-react';
 import MenuContent from "./MenuContent/MenuContent";
 import "./Menu.css";
 import { getBackgroundColor, getPrimaryColor, isDarkMode } from "../../utils";
+import LogoContent from "../Logo/LogoContent/LogoContent";
 
 
 const Menu: React.FC = () => {
@@ -99,9 +100,17 @@ const Menu: React.FC = () => {
             height: '100%',
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            flexDirection: 'column',
           }}>
             <MenuContent onClick={handleClose}/>
+            <Box sx={{
+              display: 'flex',
+              flexDirection: 'row',
+              marginTop: '1rem', // Add some margin top
+            }}>
+              <LogoContent flexDirection="row" noAnimation/>
+            </Box>
           </Box>
         </Box>
       </Fade>
