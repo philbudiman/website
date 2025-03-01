@@ -84,7 +84,10 @@ const Menu: React.FC = () => {
               width: '90vw',
               margin: '1.5rem',
               display: 'flex',
-              alignItems: 'flex-start'
+              alignItems: 'flex-start',
+              '@media (orientation: landscape)': {
+                width: '95vw'
+              },
             }}
           >
             <IconButton

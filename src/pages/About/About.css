@@ -25,12 +25,36 @@
   }
 }
 
+@media (max-width: 380px) {
+  .content-wrapper {
+    & p {
+      font-size: smaller;
+    }
+  }
+}
+
 @media (max-width: 720px) {
   .content-wrapper {
     gap: 1rem;
 
     & img {
       width: 25vh;
+    }
+  }
+}
+
+@media (orientation: landscape) and (max-height: 480px) {
+  .content-wrapper {
+    flex-direction: row;
+
+    & p {
+      width: 55vw;
+      font-size: smaller;
+      margin-block: 0.5em;
+    }
+
+    & img {
+      width: 25vw;
     }
   }
 }
