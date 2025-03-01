@@ -13,6 +13,7 @@ const Logo = () => {
   const anchorEl = React.useRef<HTMLImageElement | null>(null);
 
   const hoverOn = () => {
+    if (window.innerWidth < 480) return;
     setShow(true);
   };
 
