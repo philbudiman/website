@@ -4,7 +4,7 @@ import { Modal, Fade, Box, IconButton } from "@mui/material";
 import { Cross as Hamburger } from 'hamburger-react';
 import MenuContent from "./MenuContent/MenuContent";
 import "./Menu.css";
-import { getBackgroundColor, isDarkMode } from "../../utils";
+import { getBackgroundColor, getPrimaryColor, isDarkMode } from "../../utils";
 
 
 const Menu: React.FC = () => {
@@ -72,7 +72,8 @@ const Menu: React.FC = () => {
             sx={{
               position: 'absolute',
               top: '1rem', // Matches Header margin
-              left: '1rem', // Matches Header margin
+              left: '.7rem', // Matches Header margin
+              color: getPrimaryColor(),
             }}
             onClick={handleClose}
           >
@@ -91,7 +92,7 @@ const Menu: React.FC = () => {
             justifyContent: 'center',
             alignItems: 'center'
           }}>
-            <MenuContent />
+            <MenuContent onClick={handleClose}/>
           </Box>
         </Box>
       </Fade>
