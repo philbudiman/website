@@ -28,10 +28,6 @@
     width: max-content;
     font-size: smaller;
     font-weight: normal;
-
-    @media (max-height: 480px) {
-        display: none;
-    }
 }
 
 .restart-button:hover{
@@ -41,5 +37,14 @@
 @keyframes dash {
     to {
         stroke-dashoffset: 0;
+    }
+}
+
+@media (max-height: 480px) {
+    #svg_window svg { /* Target the svg within #svg_window */
+        transform: scale(0.85) skew(-5deg,0deg); /* Apply scale transformation */
+    }
+    .restart-button{
+        display: none;
     }
 }
