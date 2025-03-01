@@ -28,6 +28,10 @@
     width: max-content;
     font-size: smaller;
     font-weight: normal;
+
+    @media (max-height: 480px) {
+        display: none;
+    }
 }
 
 .restart-button:hover{
