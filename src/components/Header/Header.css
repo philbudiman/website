@@ -4,10 +4,8 @@
   flex-direction: row;
   justify-content: space-between;
   width: 95%;
-}
-
-@media (max-width: 480px) {
-  .header {
+  
+  @media (max-width: 480px) {
     width: 90%;
   }
 }
