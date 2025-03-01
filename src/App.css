@@ -8,8 +8,12 @@
   font-family: 'SF Pro Light', 'Helvetica Neue', sans-serif;
   justify-content: space-between;
   align-items: center;
-  height: calc(100 * var(--vh));
-  min-width: 100vw;
+  height: 100dvh;
+  width: 100vw;
   flex-direction: column;
   color: var(--color-primary);
+
+  @supports not (-webkit-touch-callout: none) {
+    height: 100vh;
+  }
 }
