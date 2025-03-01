@@ -3,5 +3,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 95%; /* todo: add media query to set width to 90% for mobile view */
+  width: 95%;
+}
+
+@media (max-width: 480px) {
+  .header {
+    width: 90%;
+  }
 }
