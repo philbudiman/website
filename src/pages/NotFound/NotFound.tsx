@@ -9,7 +9,7 @@ const NotFound = () => {
 
   React.useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 480 || window.innerHeight < 480);
+      setIsMobile(window.innerWidth < 720 || window.innerHeight < 720);
     };
     handleResize();
     window.addEventListener('resize', handleResize);
