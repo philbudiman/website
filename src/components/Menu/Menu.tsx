@@ -83,7 +83,6 @@ const Menu: React.FC = () => {
             sx={{
               width: '90vw',
               margin: '1.5rem',
-              marginLeft: '1.2rem',
               display: 'flex',
               alignItems: 'flex-start'
             }}
