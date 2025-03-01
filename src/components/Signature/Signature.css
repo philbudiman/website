@@ -27,6 +27,7 @@
     z-index: 10; /* Ensure the button is above the SVG */
     width: max-content;
     font-size: smaller;
+    font-weight: normal;
 }
 
 .restart-button:hover{
