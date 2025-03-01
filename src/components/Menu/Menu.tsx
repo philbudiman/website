@@ -70,7 +70,7 @@ const Menu: React.FC = () => {
         <Box
           sx={{
             width: '100vw',
-            height: '100vh',
+            height: '100dvh',
             bgcolor: getBackgroundColor(),
             display: 'flex',
             flexDirection: 'column',
@@ -110,6 +110,7 @@ const Menu: React.FC = () => {
             justifyContent: 'center',
             alignItems: 'center',
             flexDirection: 'column',
+            paddingBottom: '1.5rem',
           }}>
             <MenuContent onClick={handleClose} />
             <Box sx={{

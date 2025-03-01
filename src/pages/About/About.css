@@ -25,14 +25,12 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 720px) {
   .content-wrapper {
-    & p {
-      font-size: smaller;
-    }
+    gap: 1rem;
 
     & img {
-      width: 12rem;
+      width: 25vh;
     }
   }
 }
