@@ -1,3 +1,4 @@
 .logo {
   width: 3rem;
+  -webkit-tap-highlight-color: transparent;
 }
