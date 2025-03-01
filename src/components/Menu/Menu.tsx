@@ -47,7 +47,7 @@ const Menu: React.FC = () => {
           }
         }
       }}
-      children={<MenuContent />}
+      children={<MenuContent onClick={handleClose} />}
     />
   );
 
@@ -111,7 +111,7 @@ const Menu: React.FC = () => {
             alignItems: 'center',
             flexDirection: 'column',
           }}>
-            <MenuContent onClick={handleClose}/>
+            <MenuContent onClick={handleClose} />
             <Box sx={{
               display: 'flex',
               flexDirection: 'row',
