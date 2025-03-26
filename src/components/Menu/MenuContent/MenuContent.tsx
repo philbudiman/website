@@ -8,7 +8,8 @@ interface MenuContentProps {
 const MenuContent = (props: MenuContentProps) => {
   const buttonMap: Record<string, string> = {
     'home': '/',
-    'about': '/about'
+    'about': '/about',
+    'blog': '/blog',
   };
   return (
     <div className="menu-content">

@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer';
 import Router from './components/Router/Router';
 import { ThemeProvider } from './components/Theme/ThemeProvider';
 
-function App() {
+const App = () =>  {
   return (
     <div className="Base">
       <ThemeProvider>

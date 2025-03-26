@@ -17,6 +17,10 @@ export const getBackgroundColor = (): string => {
   return getCSSVariable('--color-background');
 };
 
+export const getTertiaryColor = (): string => {
+  return getCSSVariable('--color-tertiary');
+};
+
 /**
  * Sets a CSS variable in the :root selector.
  * @param variable - The CSS variable to set (e.g., "--color-primary").
@@ -44,6 +48,7 @@ export const toggleDarkMode = (darkModeOverride?: boolean): void => {
   localStorage.setItem("theme", darkModeEnabled ? "dark" : "light");
   setCSSVariable("--color-primary", darkModeEnabled ? "#fff" : "#000");
   setCSSVariable("--color-background", darkModeEnabled ? "#000" : "#fff");
+  setCSSVariable("--color-tertiary", darkModeEnabled ? "#202020" : "#efefef");
 };
 
 export const setDarkMode = () => {
