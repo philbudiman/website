@@ -18,4 +18,8 @@
     color: var(--color-primary);
     text-decoration: underline;
   }
+
+  @media (max-width: 480px) {
+    font-size: larger;
+  }
 }
