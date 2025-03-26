@@ -7,6 +7,7 @@ import './BlogPost.css';
 import { Button } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { navigate } from 'wouter/use-browser-location';
+import FadeInSection from '../FadeInSection/FadeInSection';
 
 const BlogPost = () => {
   const [match, params] = useRoute('/blog/:slug');
@@ -42,7 +43,7 @@ const BlogPost = () => {
   }
 
   return (
-    <div className='fade-in BlogPost'>
+    <FadeInSection className='BlogPost'>
       <Button className='button' onClick={() => navigate('/blog')}>
         <ArrowBackIcon/>
         Back
@@ -54,7 +55,7 @@ const BlogPost = () => {
       <article>
         <ReactMarkdown>{content}</ReactMarkdown>
       </article>
-    </div>
+    </FadeInSection>
   );
 }
 
