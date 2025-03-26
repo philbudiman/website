@@ -43,7 +43,7 @@ const BlogPost = () => {
 
   return (
     <div className='fade-in BlogPost'>
-      <Button className='button' href="/blog">
+      <Button className='button' onClick={() => navigate('/blog')}>
         <ArrowBackIcon/>
         Back
       </Button>
