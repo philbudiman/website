@@ -1,4 +1,4 @@
-const posts = import.meta.glob('/src/posts/*.md', { eager: true, as: 'raw' });
+const posts = import.meta.glob('/src/posts/*.md', { eager: true, query: '?raw', import: 'default' });
 
 export type BlogPost = {
   title: string;
