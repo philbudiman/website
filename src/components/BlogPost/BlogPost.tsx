@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import './BlogPost.css';
 import { Button } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { navigate } from 'wouter/use-browser-location';
 
 const BlogPost = () => {
   const [match, params] = useRoute('/blog/:slug');
@@ -30,6 +31,8 @@ const BlogPost = () => {
           timeZone: 'UTC'
         });
         setDateString(formattedDateString);
+      } else {
+        navigate('/404');
       }
     }
   }, [params]);

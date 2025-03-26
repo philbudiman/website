@@ -20,6 +20,7 @@
 .button {
   color: var(--color-primary) !important;
   gap: .25rem;
+  padding: 0 !important;
 
   &:hover {
     background-color: var(--color-tertiary);
