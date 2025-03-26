@@ -23,7 +23,12 @@ const BlogPost = () => {
 
         // Format date in human-readable format
         const date = new Date(post.date);
-        const formattedDateString = date.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'});
+        const formattedDateString = date.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          timeZone: 'UTC'
+        });
         setDateString(formattedDateString);
       }
     }
