@@ -12,7 +12,13 @@
 }
 
 .post-link {
-  color: inherit;
+  a {
+    color: var(--color-primary);
+  }
+
+  span {
+    font-weight: normal;
+  }
 
   &:hover {
     color: var(--color-primary);
@@ -21,5 +27,6 @@
 
   @media (max-width: 480px) {
     font-size: larger;
+    margin: 0.5rem 0;
   }
 }
