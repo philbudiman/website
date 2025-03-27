@@ -91,6 +91,12 @@
 .fade-in {
   -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  transform: translateY(1px); /* Start slightly lower */
+  transition: transform 1s ease-out;
+}
+
+.fade-in.appear {
+  transform: translateY(0);
 }
 
 .fade-in-bottom {

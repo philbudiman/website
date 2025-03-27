@@ -1,19 +1,13 @@
 import { useEffect, useRef } from "react";
-import clsx from "clsx"; // Optional: for easier className merging
 
-interface FadeInSectionProps {
-  children: React.ReactNode;
-  className?: string;
-}
-
-const FadeInSection: React.FC<FadeInSectionProps> = ({ children, className }) => {
+const FadeInSection: React.FC<{ children: React.ReactNode; className?: string }> = ({ children, className }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          ref.current?.classList.add("fade-in");
+          ref.current?.classList.add("appear"); // Add 'appear' class when in view
           observer.disconnect(); // Stop observing once animated
         }
       },
@@ -24,7 +18,7 @@ const FadeInSection: React.FC<FadeInSectionProps> = ({ children, className }) =>
     return () => observer.disconnect();
   }, []);
 
-  return <div ref={ref} className={clsx("opacity-0", className)}>{children}</div>;
+  return <div ref={ref} className={`fade-in ${className || ""}`}>{children}</div>;
 };
 
 export default FadeInSection;
