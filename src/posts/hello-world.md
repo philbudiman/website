@@ -1,10 +1,10 @@
 ---
-title: "hello world"
+title: "Hello, World!"
 date: "2025-03-25"
 ---
 
-hey! 👋
+Hey! 👋  
 
-just finished setting up my blog. this is gonna be a space where i write about basically anything and everything my heart desires. may or may not be related to tech or working as a software engineer, but the next few entries'll probably be something tech-related (like how i implemented this blog!)
+Just got my blog up and running! This'll be my little corner of the internet where I write about—well, whatever I feel like. Could be tech, could be life, could be something totally random. That said, the next few posts will probably dive into the tech behind this blog (because, let's be real, I had to nerd out a little).  
 
-see y'all in the next one, but til then, take it easy
+Catch you in the next one, but until then, take it easy!  

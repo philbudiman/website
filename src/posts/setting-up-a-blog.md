@@ -1,19 +1,21 @@
 ---
-title: "blog: idea"
+title: "Blog: Idea"
 date: "2025-03-26"
 ---
 
-When I finished re-building my personal website to the one you're on right now, I only had a handful of pages:
-1. Home (with the signature animation)
-2. About (with an introduction and link to my resume)
-3. 404 (with a fun donut animation, credit: a1k0n's [donut-math](https://www.a1k0n.net/2011/07/20/donut-math.html) for original source code which I ported to TypeScript)
+When I wrapped up rebuilding my personal website—the one you're on right now—I started with just a few pages:  
 
-So, naturally, I wanted to add at least one more feature. Thing is, I wasn't sure what I wanted to add.
+1. **Home** (featuring my signature animation)  
+2. **About** (a quick intro + a link to my resume)  
+3. **404** (with a fun donut animation—shoutout to a1k0n’s [donut-math](https://www.a1k0n.net/2011/07/20/donut-math.html), which I ported to TypeScript)  
 
-I didn't feel like adding a contact page was necessary since I already have my LinkedIn, GitHub, and Email linked on the website.
+Naturally, I wanted to add something more. But what?  
 
-Didn't feel like adding a separate page for projects or experience would make much sense with my resume and LinkedIn already on here.
+A contact page felt unnecessary—I already link to my LinkedIn, GitHub, and email.  
+A dedicated projects or experience page? Redundant, given my resume and LinkedIn.  
 
-Went through a few more ideas before I had an _a-ha_ moment: I remembered watching _The Social Network_'s opening scene, where--after getting dumped by his girlfriend--Zuck gets drunk, has an idea for Facemash, and live-blogs his development throughout the night.
+I cycled through a few ideas before having an _a-ha_ moment:  
 
-While I don't foresee myself blogging anything nearly as dramatically as what happens in the movie, I figured a blog was interesting enough both as a writing platform and in terms of the engineering/implementation challenge behind it.
+I thought back to the opening scene of The Social Network, where—reeling from a breakup—Zuck drowns his sorrows, comes up with the idea for Facemash, and live-blogs the entire coding spree.
+
+Now, I don’t plan on blogging anything nearly as dramatic, but the idea stuck. A blog felt like the perfect addition—not just as a space to write, but as an interesting engineering challenge to build.  
