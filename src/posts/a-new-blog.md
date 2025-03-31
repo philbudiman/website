@@ -1,5 +1,5 @@
 ---
-title: "Blog: Idea"
+title: "ep iv: a new blog"
 date: "2025-03-26"
 ---
 
