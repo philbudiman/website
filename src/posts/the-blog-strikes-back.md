@@ -3,6 +3,8 @@ title: "ep v: the blog strikes back"
 date: "2025-03-31"
 ---
 
+![parody poster](the-blog-strikes-back.png)
+
 In my last post, I landed on adding a blog. Simple enough in concept, but the next step was implementation: how to integrate it cleanly without disrupting the existing website structure.
 
 My brain, naturally, went through a few stages of... let's call it "ideation."

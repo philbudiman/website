@@ -9,6 +9,17 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { navigate } from 'wouter/use-browser-location';
 import FadeInSection from '../FadeInSection/FadeInSection';
 
+import { getBaseUrl } from '../../utils';
+
+const getEnvVars = () => {
+  const mode: string = import.meta.env.MODE;
+  const base_url: string = import.meta.env.BASE_URL;
+  const prod: boolean = import.meta.env.PROD;
+  const dev: boolean = import.meta.env.DEV;
+  const ssr: boolean = import.meta.env.SSR;
+  return { mode, base_url, prod, dev, ssr };
+}
+
 const BlogPost = () => {
   const [match, params] = useRoute('/blog/:slug');
   const [content, setContent] = useState<string>('');
@@ -53,7 +64,16 @@ const BlogPost = () => {
         <sub>{dateString}</sub>
       </div>
       <article>
-        <ReactMarkdown>{content}</ReactMarkdown>
+        <ReactMarkdown
+          urlTransform={url => {
+            console.log('env=',getEnvVars());
+            console.log('baseUrl=', getBaseUrl());
+            const newUrl = `${getBaseUrl()}${url}`;
+            console.log('newUrl=', newUrl);
+            return newUrl;
+          }
+          }
+        >{content}</ReactMarkdown>
       </article>
     </FadeInSection>
   );

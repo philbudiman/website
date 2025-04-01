@@ -21,6 +21,21 @@
     border-radius: .25rem;
     padding: .15rem .2rem;
   }
+
+  img {
+    display: block;
+    float: none;
+    margin: 2rem auto;
+    max-width: 35%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    img {
+      max-width: 80%;
+      margin: 1rem auto;
+    }
+  }
 }
 
 .button {

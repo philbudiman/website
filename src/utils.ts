@@ -58,3 +58,10 @@ export const setDarkMode = () => {
 export const setLightMode = () => {
   toggleDarkMode(false);
 }
+
+export const getBaseUrl = () => {
+  const mode: string = import.meta.env.MODE;
+  const PROD = 'https://philbudiman.com/';
+  const DEV = 'http://localhost:5173/';
+  return mode === 'development' ? DEV : PROD;
+}
