@@ -8,10 +8,17 @@
 
   @media (max-width: 480px) {
     width: 80%;
+
+    h1 {
+      font-size: 2.7em;
+    }
   }
 }
 
 .post-link {
+  margin: 0.5rem 0;
+  width: fit-content;
+
   a {
     color: var(--color-primary);
   }
@@ -27,6 +34,5 @@
 
   @media (max-width: 480px) {
     font-size: larger;
-    margin: 0.5rem 0;
   }
 }

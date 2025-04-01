@@ -9,6 +9,7 @@
     width: 85vw;
     white-space: pre-line;
     text-align: center;
+    line-height: 1.75;
   }
 
   & img {
@@ -25,10 +26,11 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .content-wrapper {
     & p {
       font-size: smaller;
+      line-height: 1.5;
     }
   }
 }
