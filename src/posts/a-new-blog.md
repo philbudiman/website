@@ -3,7 +3,7 @@ title: "ep iv: a new blog"
 date: "2025-03-26"
 ---
 
-When I wrapped up rebuilding my personal website—the one you're on right now—I started with just a few pages:  
+When I wrapped up rebuilding my personal website—the one you're on right now—I started with just a few pages:
 
 1. **Home** (featuring my signature animation)  
 2. **About** (a quick intro + a link to my resume)  
@@ -11,7 +11,7 @@ When I wrapped up rebuilding my personal website—the one you're on right now�
 
 Naturally, I wanted to add something more. But what?  
 
-A contact page felt unnecessary—I already link to my LinkedIn, GitHub, and email.  
+A contact page felt unnecessary as I already had a link to my LinkedIn, GitHub, and email.  
 A dedicated projects or experience page? Redundant, given my resume and LinkedIn.  
 
 I cycled through a few ideas before having an _a-ha_ moment:  
