@@ -15,12 +15,18 @@
   @media (max-width: 480px) {
     width: 80%;
   }
+
+  code {
+    background-color: var(--color-tertiary);
+    border-radius: .25rem;
+    padding: .15rem .2rem;
+  }
 }
 
 .button {
   color: var(--color-primary) !important;
   gap: .25rem;
-  padding: 6px 0px !important;
+  padding: 0.5rem 0.15rem !important;
 
   &:hover {
     background-color: var(--color-tertiary);

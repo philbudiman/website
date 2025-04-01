@@ -48,7 +48,7 @@ export const toggleDarkMode = (darkModeOverride?: boolean): void => {
   localStorage.setItem("theme", darkModeEnabled ? "dark" : "light");
   setCSSVariable("--color-primary", darkModeEnabled ? "#fff" : "#000");
   setCSSVariable("--color-background", darkModeEnabled ? "#000" : "#fff");
-  setCSSVariable("--color-tertiary", darkModeEnabled ? "#202020" : "#efefef");
+  setCSSVariable("--color-tertiary", darkModeEnabled ? "#464646" : "#dfdfdf");
 };
 
 export const setDarkMode = () => {
