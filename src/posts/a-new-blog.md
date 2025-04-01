@@ -3,6 +3,8 @@ title: "ep iv: a new blog"
 date: "2025-03-26"
 ---
 
+![parody poster](a-new-blog.png)
+
 When I wrapped up rebuilding my personal website—the one you're on right now—I started with just a few pages:
 
 1. **Home** (featuring my signature animation)  
@@ -19,3 +21,7 @@ I cycled through a few ideas before having an _a-ha_ moment:
 I thought back to the opening scene of The Social Network, where—reeling from a breakup—Zuck drowns his sorrows, comes up with the idea for Facemash, and live-blogs the entire coding spree.
 
 Now, I don’t plan on blogging anything nearly as dramatic, but the idea stuck. A blog felt like the perfect addition—not just as a space to write, but as an interesting engineering challenge to build.  
+
+---
+
+Note: If you were expecting _A New Blog_ on the poster, I regret to inform you that OpenAI has thwarted my artistic vision. The free tier strikes back.
