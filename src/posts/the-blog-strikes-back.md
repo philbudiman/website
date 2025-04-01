@@ -17,13 +17,13 @@ First thought? Go big. Maybe too big. Migrate the whole site over to Firebase, s
 
 Okay, dial it back. How about just serving content straight from Markdown files? Seems reasonable on the surface. I looked into reading files directly in TypeScript, hoping for something easy like Python's `open`. Turns out, browsers are understandably cautious about letting frontends casually rifle through local files. The suggested path involved `fetch`, which could work, but it would necessitate manually managing a list of post titles and their corresponding file paths just to populate the blog's index page – a rather inelegant and potentially fragile solution requiring too much manual bookkeeping. The search continued.
 
-### Option 3: The Jekyll Detour detour
+### Option 3: The Jekyll Detour
 
 Next, I considered Jekyll, a popular static site generator often paired with GitHub Pages. Seemed promising initially, but I encountered a fundamental integration challenge. Jekyll excels with its own HTML templating system, whereas my site was already happily living in React land. Trying to shoehorn Jekyll's output into my existing design felt architecturally misaligned – like the proverbial square peg in a round hole. Attempts to adapt Jekyll purely as a content-fetching API for the React frontend proved impractical.
 
 ### Option 4: The Unexpected Hero - `import.meta.glob` ✨
 
-After some more digging, I stumbled upon `import.meta.glob`. Now, standard JavaScript has `import.meta`, which gives you info about the current code module, like its own URL. Useful, but not quite it. But `import.meta.glob`? That's a Vite-specific superpower. It lets you find and import multiple files using patterns – precisely what was needed for discovering all the .md files within a directory.
+After some more digging, I stumbled upon `import.meta.glob`. Vanilla JavaScript has `import.meta`, which gives you info about the current code module, like its own URL. Useful, but not quite it. But `import.meta.glob`? That's a Vite-specific superpower. It lets you find and import multiple files using patterns – precisely what was needed for discovering all the .md files within a directory.
 
 This felt like the right fit. I implemented a simple `BlogUtils` helper class (nothing too fancy) to encapsulate the logic for retrieving posts. This utility then feeds the content into a React component responsible for rendering the Markdown.
 
