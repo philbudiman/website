@@ -29,8 +29,8 @@ This felt like the right fit. I implemented a simple `BlogUtils` helper class (n
 
 The advantages of this approach became clear:
 
-1. Consistency: The blog seamlessly integrates with the rest of the site's look, feel, and React architecture. It avoids introducing disparate technologies or architectural clashes.
-2. Simplicity: Adding a new blog post is now as simple as placing a new Markdown file in the designated `/src/posts` directory. The build process automatically discovers and incorporates it – no manual indexing or configuration updates required.
-3. Zero Dependencies: Unlike a CMS or database-driven approach, this method doesn't introduce external dependencies or services that need maintenance or authentication.  
+1. **Consistency**: The blog seamlessly integrates with the rest of the site's look, feel, and React architecture. It avoids introducing disparate technologies or architectural clashes.
+2. **Simplicity**: Adding a new blog post is now as simple as placing a new Markdown file in the designated `/src/posts` directory. The build process automatically discovers and incorporates it – no manual indexing or configuration updates required.
+3. **Zero Dependencies**: Unlike a CMS or database-driven approach, this method doesn't introduce external dependencies or services that need maintenance or authentication.  
 
 So, after evaluating options ranging from cloud databases to established static site generators, the most effective solution turned out to be leveraging a feature within my existing build tool. It's a good reminder that sometimes the most elegant answer is closer than you think.
