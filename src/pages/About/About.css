@@ -29,7 +29,6 @@
 @media (max-width: 480px) {
   .content-wrapper {
     & p {
-      font-size: smaller;
       line-height: 1.5;
     }
   }
