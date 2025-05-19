@@ -1,10 +1,10 @@
 ---
 title: "hello, world!"
-date: "2025-03-25"
+date: "2025-05-18"
 ---
 
-Hey! 👋  
+Hey! 👋
 
-Just got my blog up and running! This'll be my little corner of the internet where I write about basically whatever I feel like. Could be tech, could be life, could be something totally random. That said, the next few posts will probably dive into the tech behind this blog (because, let's be real, I had to nerd out a little).  
+Set up this blog as a way to write about stuff that interests me. Might be on tech, movies, music, anything really. That being said, the next few posts will probably dive into what went into building this blog in the first place.
 
-Catch you in the next one, but until then, take it easy!  
+Thanks for checking it out, but until then, take it easy 🤙
