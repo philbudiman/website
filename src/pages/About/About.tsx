@@ -1,6 +1,13 @@
 import './About.css';
 import headshot from '../../assets/headshot.jpg';
 import Markdown from 'react-markdown';
+import type { Components } from 'react-markdown';
+
+const LinkRenderer: Components['a'] = ({ href, children }) => (
+  <a href={href} target="_blank" rel="noreferrer">
+    {children}
+  </a>
+);
 
 const About = () => {
   const textContent = [
@@ -16,7 +23,9 @@ const About = () => {
           alt="headshot"
         />
         <div className='txt' >
-          <Markdown>{textContent.join('\n\n')}</Markdown>
+          <Markdown components={{ a: LinkRenderer }}>
+            {textContent.join('\n\n')}
+          </Markdown>
         </div>
       </div>
     </div>
